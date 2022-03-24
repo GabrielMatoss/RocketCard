@@ -1,0 +1,31 @@
+/*Botao */
+aside{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 80px;
+    z-index: 100;
+    color: var(--buttons);
+    gap: 10px;
+  
+}
+
+button{
+    background-color: var(--bg);
+    color: var(--buttons);
+    border: var(--border-button) 1px solid;
+    width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    transition: ease .3s;
+    box-shadow: 3px 3px 0 1px var(--bg-card);
+    transition: ease .3s;
+}
+
+.botao:active {
+    box-shadow: 0 0 0 0 var(--bg-card), inset 3px 3px 0 var(--bg-card);
+    transform:  translate(3px, 3px);
+}

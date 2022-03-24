@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>RocketCard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/btn.css">
+</head>
+<body>
+    <main id="card">
+        <div class="background-colors">
+
+        <header>
+            <div class="logo"></div>
+            <p id="userName"></p>
+        </header>
+
+        <div id="photoProfile">
+            <img id="profile" src="" alt="Minha foto de Perfil">
+        </div>
+
+        <section>
+            <ul>
+                <li>
+                    <img class="icon-info" src="./assets/followers.svg" alt="Seguidores">
+                    <span id="numberFollowers"></span>
+                </li>
+                <li>
+                    <img class="icon-info" src="./assets/following.svg" alt="Seguindo">
+                    <span id="numberFollowing"></span>
+                </li>
+                <li>
+                    <img class="icon-info" src="./assets/repository.svg" alt="Repositorios">
+                    <span id="numberRepo"></span>
+                </li>
+                <li>
+                    <img class="icon-info" src="./assets/location.svg" alt="Localização">
+                    <span id="localization"></span>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <img src="./assets/logo.svg" alt="Logo da RocketSeat">
+            <p>RocketCard</p>
+        </footer>
+        
+    </div>
+    </main>
+
+    <aside>
+        <p>Customizar RocketCard</p>
+        <button type="button" id="btnChangeColor" class="botao">
+            <p>Gerar Background</p>
+        </button>
+    </aside>
+    
+    <script src="./js/scripts.js"></script>
+    <script  type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll("main"),{
+            max: 25,
+            speed: 400,
+            reverse: true
+        });
+    </script>
+</body>
+</html>
