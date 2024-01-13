@@ -1,6 +1,5 @@
 /*Botao */
 aside{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +9,6 @@ aside{
     z-index: 100;
     color: var(--buttons);
     gap: 10px;
-  
 }
 
 button{
